@@ -7,14 +7,42 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        passwordTextfield.textContentType = .oneTimeCode
+
+    }
 
     @IBAction func loginPressed(_ sender: UIButton) {
+        
+        
+        if let email = emailTextfield.text, let password = passwordTextfield.text{
+            
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+              
+                if let e = error {
+                    AppSnackBar.make(in: self.view, message: e.localizedDescription, duration: .lengthLong).show()
+                } else{
+                    // Navigate to the ChatViewController
+                    self.performSegue(withIdentifier: "LoginToChat", sender: self)
+                }
+                
+            
+            }
+        }
+        
+        
+        
+        
+       
+        
     }
     
 }

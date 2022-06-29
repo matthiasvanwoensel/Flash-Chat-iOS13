@@ -20,6 +20,7 @@ class RegisterViewController: UIViewController {
         passwordTextfield.textContentType = .oneTimeCode
 
     }
+    
     @IBAction func registerPressed(_ sender: UIButton) {
         
         if let email = emailTextfield.text, let password = passwordTextfield.text{
