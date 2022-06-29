@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SnackBar_swift
 
 class ChatViewController: UIViewController {
 
@@ -15,11 +17,30 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // hide back button in nav
+        navigationItem.hidesBackButton = true
+        // navigation title
+        title = K.appName
+        
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
     }
     
-
+    @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
+        let firebaseAuth = Auth.auth()
+        
+        do {
+            try firebaseAuth.signOut()
+            // navigate back to root controller
+            navigationController?.popToRootViewController(animated: true)
+            
+        } catch let signOutError as NSError {
+    
+            AppSnackBar.make(in: self.view, message: String(signOutError as! Substring), duration: .lengthLong).show()
+            
+        }
+        
+    }
+    
 }

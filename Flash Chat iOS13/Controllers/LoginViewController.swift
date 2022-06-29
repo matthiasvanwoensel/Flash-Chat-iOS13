@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
                     AppSnackBar.make(in: self.view, message: e.localizedDescription, duration: .lengthLong).show()
                 } else{
                     // Navigate to the ChatViewController
-                    self.performSegue(withIdentifier: "LoginToChat", sender: self)
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
                 
             

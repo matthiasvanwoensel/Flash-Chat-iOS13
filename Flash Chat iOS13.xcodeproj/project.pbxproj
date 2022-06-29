@@ -20,6 +20,7 @@
 		133C20571B53E5E3803FCDD8 /* Pods_Flash_Chat_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA899030E83BA45D26EC5478 /* Pods_Flash_Chat_iOS13.framework */; };
 		39BDBCCB286C351200F70A08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39BDBCCA286C351200F70A08 /* GoogleService-Info.plist */; };
 		39BDBCCF286C40C700F70A08 /* AppSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BDBCCE286C40C700F70A08 /* AppSnackBar.swift */; };
+		39BDBCD1286C4B2C00F70A08 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BDBCD0286C4B2C00F70A08 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		2BB918372F59F18B17353394 /* Pods-Flash Chat iOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat iOS13.debug.xcconfig"; path = "Target Support Files/Pods-Flash Chat iOS13/Pods-Flash Chat iOS13.debug.xcconfig"; sourceTree = "<group>"; };
 		39BDBCCA286C351200F70A08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		39BDBCCE286C40C700F70A08 /* AppSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSnackBar.swift; sourceTree = "<group>"; };
+		39BDBCD0286C4B2C00F70A08 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FA899030E83BA45D26EC5478 /* Pods_Flash_Chat_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_Chat_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				0B628181235DEE8400E35CAF /* LaunchScreen.storyboard */,
 				39BDBCCA286C351200F70A08 /* GoogleService-Info.plist */,
 				0B628184235DEE8400E35CAF /* Info.plist */,
+				39BDBCD0286C4B2C00F70A08 /* Constants.swift */,
 			);
 			path = "Flash Chat iOS13";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
 				39BDBCCF286C40C700F70A08 /* AppSnackBar.swift in Sources */,
+				39BDBCD1286C4B2C00F70A08 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

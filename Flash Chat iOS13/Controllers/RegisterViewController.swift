@@ -30,7 +30,7 @@ class RegisterViewController: UIViewController {
                     AppSnackBar.make(in: self.view, message: e.localizedDescription, duration: .lengthLong).show()
                 } else{
                     // Navigate to the ChatViewController
-                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 }
             }
             
