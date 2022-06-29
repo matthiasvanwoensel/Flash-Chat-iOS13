@@ -21,6 +21,7 @@
 		39BDBCCB286C351200F70A08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39BDBCCA286C351200F70A08 /* GoogleService-Info.plist */; };
 		39BDBCCF286C40C700F70A08 /* AppSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BDBCCE286C40C700F70A08 /* AppSnackBar.swift */; };
 		39BDBCD1286C4B2C00F70A08 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BDBCD0286C4B2C00F70A08 /* Constants.swift */; };
+		39BDBCD4286C50E700F70A08 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BDBCD3286C50E700F70A08 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		39BDBCCA286C351200F70A08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		39BDBCCE286C40C700F70A08 /* AppSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSnackBar.swift; sourceTree = "<group>"; };
 		39BDBCD0286C4B2C00F70A08 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		39BDBCD3286C50E700F70A08 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FA899030E83BA45D26EC5478 /* Pods_Flash_Chat_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_Chat_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 		0B628175235DEE8100E35CAF /* Flash Chat iOS13 */ = {
 			isa = PBXGroup;
 			children = (
+				39BDBCD2286C50D700F70A08 /* Models */,
 				39BDBCCD286C40AE00F70A08 /* Partials */,
 				0B628176235DEE8100E35CAF /* AppDelegate.swift */,
 				0B628178235DEE8100E35CAF /* SceneDelegate.swift */,
@@ -117,6 +120,14 @@
 				39BDBCCE286C40C700F70A08 /* AppSnackBar.swift */,
 			);
 			path = Partials;
+			sourceTree = "<group>";
+		};
+		39BDBCD2286C50D700F70A08 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				39BDBCD3286C50E700F70A08 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8465C9D92B38A5CB38C26EED /* Frameworks */ = {
@@ -256,6 +267,7 @@
 				0B62818B235DF00000E35CAF /* WelcomeViewController.swift in Sources */,
 				0B628177235DEE8100E35CAF /* AppDelegate.swift in Sources */,
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
+				39BDBCD4286C50E700F70A08 /* Message.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
