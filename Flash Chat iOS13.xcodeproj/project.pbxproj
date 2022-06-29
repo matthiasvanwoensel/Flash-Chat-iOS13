@@ -19,6 +19,7 @@
 		0B62819E235F0F4D00E35CAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B62819D235F0F4D00E35CAF /* README.md */; };
 		133C20571B53E5E3803FCDD8 /* Pods_Flash_Chat_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA899030E83BA45D26EC5478 /* Pods_Flash_Chat_iOS13.framework */; };
 		39BDBCCB286C351200F70A08 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39BDBCCA286C351200F70A08 /* GoogleService-Info.plist */; };
+		39BDBCCF286C40C700F70A08 /* AppSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BDBCCE286C40C700F70A08 /* AppSnackBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		0B62819D235F0F4D00E35CAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2BB918372F59F18B17353394 /* Pods-Flash Chat iOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat iOS13.debug.xcconfig"; path = "Target Support Files/Pods-Flash Chat iOS13/Pods-Flash Chat iOS13.debug.xcconfig"; sourceTree = "<group>"; };
 		39BDBCCA286C351200F70A08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		39BDBCCE286C40C700F70A08 /* AppSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSnackBar.swift; sourceTree = "<group>"; };
 		FA899030E83BA45D26EC5478 /* Pods_Flash_Chat_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flash_Chat_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 		0B628175235DEE8100E35CAF /* Flash Chat iOS13 */ = {
 			isa = PBXGroup;
 			children = (
+				39BDBCCD286C40AE00F70A08 /* Partials */,
 				0B628176235DEE8100E35CAF /* AppDelegate.swift */,
 				0B628178235DEE8100E35CAF /* SceneDelegate.swift */,
 				0B628193235DF03400E35CAF /* Views */,
@@ -103,6 +106,14 @@
 				0B62817C235DEE8100E35CAF /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		39BDBCCD286C40AE00F70A08 /* Partials */ = {
+			isa = PBXGroup;
+			children = (
+				39BDBCCE286C40C700F70A08 /* AppSnackBar.swift */,
+			);
+			path = Partials;
 			sourceTree = "<group>";
 		};
 		8465C9D92B38A5CB38C26EED /* Frameworks */ = {
@@ -245,6 +256,7 @@
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
+				39BDBCCF286C40C700F70A08 /* AppSnackBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

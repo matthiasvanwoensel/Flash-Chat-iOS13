@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SnackBar_swift
 
 class RegisterViewController: UIViewController {
 
@@ -25,7 +26,7 @@ class RegisterViewController: UIViewController {
             
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let e = error {
-                    print(e.localizedDescription)
+                    AppSnackBar.make(in: self.view, message: e.localizedDescription, duration: .lengthLong).show()
                 } else{
                     // Navigate to the ChatViewController
                     self.performSegue(withIdentifier: "RegisterToChat", sender: self)
